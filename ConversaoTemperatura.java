@@ -19,17 +19,17 @@ public class ConversaoTemperatura {
     }
 
 	
-	public static void main(String[] args) {
-		double temperaturaCelsius, temperaturaKelvin, temperaturaFahrenheit; 
-		Scanner lerDados = new Scanner(System.in);
+    public static void main(String[] args) {
+    	double temperaturaCelsius, temperaturaKelvin, temperaturaFahrenheit; 
+	Scanner lerDados = new Scanner(System.in);
         
-		System.out.print("Digite a temperatura em graus Celsius: ");
-        temperaturaCelsius = lerDados.nextDouble();
+	System.out.print("Digite a temperatura em graus Celsius: ");
+       	temperaturaCelsius = lerDados.nextDouble();
         
-        temperaturaKelvin = converterParaKelvin(temperaturaCelsius);
-        temperaturaFahrenheit = converterParaFahrenheit(temperaturaCelsius);
+       	temperaturaKelvin = converterParaKelvin(temperaturaCelsius);
+       	temperaturaFahrenheit = converterParaFahrenheit(temperaturaCelsius);
         
-        System.out.println("Temperatura em Kelvin: " + temperaturaKelvin);
+       	System.out.println("Temperatura em Kelvin: " + temperaturaKelvin);
         System.out.println("Temperatura em Fahrenheit: " + temperaturaFahrenheit);
         
         lerDados.close();

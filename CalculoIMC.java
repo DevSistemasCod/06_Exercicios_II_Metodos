@@ -3,11 +3,11 @@ package metodos;
 import java.util.Scanner;
 
 public class CalculoIMC {
-	public static double calcularIMC(double peso, double altura) {
+    public static double calcularIMC(double peso, double altura) {
         double imc;
         
         imc = peso / (altura * altura);
-		return imc;
+	return imc;
     }
     
     public static double calcularCaloriasDiarias(double peso, double altura, int idade, char sexo) {
@@ -28,14 +28,14 @@ public class CalculoIMC {
 
 
 	 
-	 public static void main(String[] args) {
-		 double peso, altura, imc, caloriasDiarias;
-		 int idade;
-		 char sexo;
+     public static void main(String[] args) {
+             double peso, altura, imc, caloriasDiarias;
+	     int idade;
+	     char sexo;
 		 
-		 Scanner lerTeclado = new Scanner(System.in);
+	     Scanner lerTeclado = new Scanner(System.in);
 	        
-		 System.out.print("Digite o seu peso em kg: ");
+	     System.out.print("Digite o seu peso em kg: ");
 	     peso = lerTeclado.nextDouble();
 	        
 	     System.out.print("Digite a sua altura em metros: ");
@@ -54,6 +54,6 @@ public class CalculoIMC {
 	     System.out.printf("Você precisa consumir %.2f", caloriasDiarias);
 	     System.out.printf(" calorias por dia.");
 	        
-	     lerTeclado.close();
-	 }
+	     lerTeclado.close(); 
+    }
 }
